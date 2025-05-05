@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.center ul li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0px 5px;
+}
+
+.cart {
+    position: relative;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.left {
+    flex: 2;
+}
+
+.center {
+    flex: 4;
+}
+
+.search {
+    flex: 2;
+}
+
+    .search input {
+        padding: 10px;
+        width: 20rem;
+        border-radius: 5px;
+        margin-left: -150px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .search input:focus {
+            border-color: #007BFF;
+            box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+        }
+
+.right {
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.bannerBox {
+    margin: 10px 0px;
+}
+
+    .bannerBox img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.menImages {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .menImages img {
+        width: 220px;
+        height: 220px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+        .menImages img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+.featuredProducts {
+    margin: 20px 0;
+    text-align: center;
+}
+
+    .featuredProducts h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .featuredProducts .productCard {
+        display: inline-block;
+        width: 230px;
+        margin: 10px;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+        .featuredProducts .productCard:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .featuredProducts .productCard img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .featuredProducts .productCard h3 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .featuredProducts .productCard p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .featuredProducts .productCard button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            .featuredProducts .productCard button:hover {
+                background-color: #0056b3;
+            }
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+    .footer a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
+}
+
+    .backToTop:hover {
+        transform: scale(1.1);
+    }
